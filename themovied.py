@@ -22,7 +22,7 @@ while True:
         break
     else:
         if select == "1":
-            result = movieApi.getPopulars()
+            movies = movieApi.getPopulars()
             for movie in movies['results']:
                 print(movie["title"])
         elif select =="2":
