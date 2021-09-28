@@ -6,7 +6,7 @@ import requests
 class theMovieDb:
     def __init__(self):
         self.api_url = "https://api.themoviedb.org/3"
-        self.api_key = "c5986ae147442eee5a3ff8f8397a2da8"
+        self.api_key = "#theMovieDB api key"
 
     def getPopulars(self):
         responce = requests.get(f"{self.api_url}/movie/popular?api_key={self.api_key}&language=en-US&page=1")
